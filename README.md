@@ -7,7 +7,7 @@ Add the following alias to your `~/.bashrc` or `~/.profile` file
 
 ```
 #BrainBox Lamp Stack
-alias lamp="curl -L -o 'install.sh' http://bit.ly/1j1F30E && curl -L -o 'Vagrantfile' http://bit.ly/1hC60se && curl -L -o '_vagrant.zip' http://bit.ly/1hFlLP9 && unzip _vagrant.zip"
+alias lamp="curl -L -o 'Vagrantfile' https://raw.githubusercontent.com/BrainBoxLabs/braingrant-up/master/Vagrantfile && curl -L -o '_vagrant.zip' https://github.com/BrainBoxLabs/braingrant-up/raw/master/_vagrant.zip && unzip _vagrant.zip"
 ```
 
 Braingrant-up
