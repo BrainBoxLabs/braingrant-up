@@ -3,6 +3,12 @@ sudo apt-get update
 #Force move ssh config
 sudo mv -f /var/www/html/configs/ssh_config /etc/ssh/ssh_config
 
+#restart ssh
+sudo /etc/init.d/ssh restart
+
+#remove configs dir
+sudo rm -r -f /var/www/html/configs
+
 : <<'END'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
