@@ -3,8 +3,10 @@ sudo apt-get update
 #set root passwd
 echo -e "root\nroot" | sudo passwd
 
-#Force move ssh config
-sudo mv -f /var/www/html/configs/ssh_config /etc/ssh/ssh_config
+echo "PermitRootLogin yes" >> /etc/ssh/ssh_config
+
+#Force move ssh config file / useful for uploading and moving files before hand
+#sudo mv -f /var/www/html/configs/ssh_config /etc/ssh/ssh_config
 
 #restart ssh
 sudo /etc/init.d/ssh restart
