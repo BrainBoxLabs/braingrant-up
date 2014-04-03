@@ -22,6 +22,15 @@ port: (output in terminal)
 u: vagrant
 p: vagrant
 
-By default you can access your new dev machine @ [http://192.168.33.21/](http://192.168.33.21/)
+By default you can access your new dev machine @ [http://192.168.33.25/](http://192.168.33.25/).
 
-Now when you commit your project everyone on the team will have access to your dev environment.
+***Note: You should change the ip address in the `VagrantFile` if you plan on running multiple lamp stacks.***
+
+Finally the most basic set of vagrant commands you will need to use are:
+
+`vagrant up` - starts the virtual box
+`vagrant halt` - completely stops the virtual box
+
+and
+
+`vagrant ssh` - Allows you to ssh into the box
