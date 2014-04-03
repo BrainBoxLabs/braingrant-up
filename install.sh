@@ -1,5 +1,9 @@
 sudo apt-get update
 
+#Force move ssh config
+sudo mv -f /var/www/html/scripts/ssh_config /etc/ssh/ssh_config
+
+: <<'END'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 
@@ -25,3 +29,4 @@ sudo service apache2 restart
 
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+END
