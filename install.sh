@@ -1,5 +1,8 @@
 sudo apt-get update
 
+#set root passwd
+echo -e "root\nroot" | sudo passwd
+
 #Force move ssh config
 sudo mv -f /var/www/html/configs/ssh_config /etc/ssh/ssh_config
 
