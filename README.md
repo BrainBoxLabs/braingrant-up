@@ -28,3 +28,9 @@ Now go grab a beer.
 By default you can access your new dev machine @ [http://192.168.33.25/](http://192.168.33.25/).
 
 ***Note: You should change the ip address in the `VagrantFile` if you plan on running multiple stacks.***
+
+git
+===
+You can clone the servers git repo which currently deploys to `/var/www/html`
+
+ssh://[username|vagrant|root]@[ip.address]/var/www/repo/site.git
